@@ -19,3 +19,6 @@ k8s_custom_deploy(
 
 k8s_resource('tdemox', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'carto.run/workload-name': 'tdemox', 'app.kubernetes.io/component': 'run'}])
+
+
+allow_k8s_contexts('akslab')
